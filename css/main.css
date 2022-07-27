@@ -1,0 +1,451 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9;
+  display: none;
+}
+
+header {
+  background-color: #fff;
+  z-index: 10;
+  position: relative;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.wrap-header {
+  display: flex;
+  align-items: center;
+}
+
+.wrap-header .wrap-logo {
+  margin-right: 70px;
+}
+
+.wrap-header .wrap-logo a {
+  display: inline-block;
+}
+
+.wrap-header .wrap-logo img {
+  min-width: 136px;
+}
+
+.wrap-header .menu li {
+  margin-right: 30px;
+}
+
+.wrap-header .menu li a {
+  color: #212121;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 22px 0 28px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.wrap-header .menu li.active a,
+.wrap-header .menu li:hover a {
+  color: #2b66b1;
+}
+
+.wrap-header .menu li.active a:after,
+.wrap-header .menu li:hover a:after {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% + 4px);
+  height: 4px;
+  background-color: #2b66b1;
+}
+
+.wrap-header .menu:hover {
+  opacity: 0.8;
+}
+
+.wrap-header .contact {
+  margin-left: auto;
+  background-color: #2b66b1;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  line-height: 1;
+}
+
+.wrap-header .contact .icon {
+  display: inline-block;
+  width: 26px;
+  margin-right: 3px;
+}
+
+.wrap-header .contact .content {
+  line-height: 1;
+}
+
+.wrap-header .contact .content p {
+  font-size: 13px;
+  letter-spacing: 0.2px;
+}
+
+.wrap-header .contact .content .phone {
+      font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', sans-serif !important;
+    font-size: 19px;
+    font-weight: bold;
+}
+.wrap-header .contact .content .phone a[href^=tel]{
+  text-decoration: none;
+  color: #fff;
+}
+.wrap-header .contact .content .phone + p{
+  color: #e5e7ed;
+}
+.slider-section {
+  margin-bottom: 50px;
+}
+
+.slider.owl-theme .owl-dots {
+  margin-top: -40px !important;
+  z-index: 2;
+  position: relative;
+}
+
+.slider.owl-theme .owl-dots .owl-dot span {
+  width: 26px;
+  height: 26px;
+  border: 2px solid #2B66B1;
+  background-color: #fff;
+}
+
+.slider.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #ccc;
+}
+
+.slider.owl-theme .owl-dots .owl-dot.active span,
+.slider.owl-theme .owl-dots .owl-dot:focus span {
+  background-color: #2B66B1;
+  border-color: #fff;
+}
+
+.flow-section {
+  margin-bottom: 70px;
+}
+
+.slider-has-nav .owl-nav .owl-prev,
+.slider-has-nav .owl-nav .owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.slider-has-nav .owl-nav .owl-next {
+  left: auto;
+}
+
+.slider-has-nav button {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 40px;
+  height: 40px;
+  border-radius: 50% !important;
+  background-color: #2b66b1 !important;
+}
+
+.slider-has-nav button:hover {
+  background: #2b66b1 !important;
+  opacity: 0.7;
+}
+
+.slider-has-nav button span {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-has-nav button.owl-prev {
+  left: calc(25% - 25px);
+}
+
+.slider-has-nav button.owl-prev span {
+  border-width: 12px 15px 12px 0;
+  border-color: transparent #ffffff transparent transparent;
+  left: 10px;
+}
+
+.slider-has-nav button.owl-next {
+  right: calc(25% - 25px);
+}
+
+.slider-has-nav button.owl-next span {
+  border-width: 12px 0 12px 15px;
+  border-color: transparent transparent transparent #ffffff;
+  right: 10px;
+}
+
+.faq-section {
+  margin-bottom: 70px;
+}
+
+.list-faq .item {
+  position: relative;
+  background-color: #E5E7ED;
+  margin-bottom: 20px;
+  padding: 20px 55px;
+  border-radius: 16px;
+}
+
+.list-faq .item .inner {
+  display: none;
+}
+
+.list-faq .item p {
+  display: flex;
+  line-height: 1.4;
+  font-size: 18px;
+}
+
+.list-faq .item p.question {
+  font-weight: bold;
+}
+
+.list-faq .item p.answer .lbl {
+  font-weight: bold;
+}
+
+.list-faq .item p .lbl {
+  margin-right: 40px;
+}
+
+.list-faq .item:after {
+  content: "+";
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1;
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  cursor: pointer;
+}
+
+.list-faq .item.active:after {
+  content: "";
+  background-color: #000;
+  top: 30px;
+  width: 12px;
+  height: 2px;
+}
+
+.toggle-menu {
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: auto;
+  width: 25px;
+}
+
+.navbar {
+  height: auto;
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+  top: -100%;
+  left: 0;
+  background-color: #fff;
+  overflow-y: hidden;
+  transition: 0.4s;
+  box-shadow: 0 4px 2px -2px gray;
+}
+
+.navbar.active {
+  border-top: 2px solid #dfdfdf;
+  top: 70px;
+}
+
+.navbar .menu {
+  padding: 10px 0 20px 0;
+}
+
+.navbar .menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #212121;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar .menu li.active a {
+  color: #2b66b1;
+}
+.wrap-header .contact .icon {
+    display: inline-block;
+    width: 13px;
+    margin-right: 3px;
+    position: relative;
+    top: -2px;
+}
+@media (max-width: 1200px) {
+  .wrap-header {
+    padding: 6px 0;
+  }
+  .wrap-header .wrap-logo {
+    margin-right: 40px;
+  }
+  .wrap-header .wrap-logo img {
+    min-width: 100px;
+  }
+  .wrap-header .menu li a {
+    font-size: 14px;
+  }
+  .wrap-header .contact .content {
+    line-height: 1.2;
+  }
+  .slider.owl-theme .owl-dots {
+    margin-top: -30px !important;
+  }
+  .slider.owl-theme .owl-dots .owl-dot span {
+    width: 16px;
+    height: 16px;
+  }
+  .slider-has-nav button {
+    width: 35px;
+    height: 35px;
+  }
+  .flow-section .slider .owl-nav button {
+    background-color: #fff !important;
+  }
+  .flow-section .slider .owl-nav button.owl-prev {
+    left: 10px;
+  }
+  .flow-section .slider .owl-nav button.owl-prev span {
+    left: 9px;
+    border-width: 8px 12px 8px 0;
+    border-color: transparent #2b66b1 transparent transparent;
+  }
+  .flow-section .slider .owl-nav button.owl-next {
+    right: 10px;
+  }
+  .flow-section .slider .owl-nav button.owl-next span {
+    right: 9px;
+    border-width: 8px 0 8px 12px;
+    border-color: transparent transparent transparent #2b66b1;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 10px 0;
+    box-shadow: 0 4px 2px -2px #b1b1b1;
+  }
+  header .wrap-header .wrap-logo {
+    margin-right: 40px;
+  }
+  header .wrap-header .wrap-logo img {
+    max-width: 80px;
+  }
+  header .wrap-header .contact .icon {
+    width: 10px;
+  }
+  header .wrap-header .contact .content p {
+    font-size: 10px;
+  }
+  header .wrap-header .contact .content span {
+    font-size: 14px !important;
+  }
+  .list-faq .item {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  .list-faq .item p {
+    font-size: 13px;
+  }
+  .list-faq .item:after {
+    top: 10px;
+    right: 10px;
+  }
+  .list-faq .item.active:after {
+    top: 20px;
+  }
+  .flow-section .slider {
+    padding: 0 20px;
+  }
+  .flow-section .slider .owl-nav button {
+    border: 2px solid #2b66b1;
+  }
+  .flow-section .slider .owl-nav button.owl-prev {
+    left: -8px;
+  }
+  .flow-section .slider .owl-nav button.owl-next {
+    right: -8px;
+  }
+  .list-faq .item p .lbl {
+    margin-right: 10px;
+  }
+  .wrap-header .contact .content .phone a[href^=tel]{
+    text-decoration: none;
+    color: #ffd203;
+  }
+}
+
+@media (max-width: 360px) {
+  header .wrap-header .wrap-logo {
+    margin-right: 20px;
+  }
+  header .wrap-header .wrap-logo img {
+    min-width: 60px;
+  }
+}
+
+@media (width: 768px) {
+  .wrap-header .wrap-logo img {
+    min-width: 85px;
+  }
+  .wrap-header .menu li a {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrap-header .menu {
+    display: flex !important;
+    margin-left: 55px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .wrap-header .menu {
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  .flow-section .slider .owl-item:not(.center) {
+    opacity: 0.8;
+  }
+}
